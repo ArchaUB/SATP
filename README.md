@@ -1,1 +1,1 @@
-# SATP
+# Skill Assessment and Training Platform
