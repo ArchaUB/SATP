@@ -1,13 +1,20 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation"; // Import useRouter
 
 export default function TeacherSignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter(); //Define useRouter
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Teacher Sign In", { email, password });
+
+    // TODO: Add authentication logic here
+
+    //  Redirect to Teacher Dashboard after successful sign-in
+    router.push("/teacher-dashboard");
   };
 
   return (
