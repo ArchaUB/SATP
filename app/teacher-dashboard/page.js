@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent, CardTitle } from "../components/Card";
+import { Card, CardContent, CardTitle } from "../components/card";
 import { useRouter } from "next/navigation";
 
 export default function TeacherDashboard() {
